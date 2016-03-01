@@ -8,14 +8,14 @@ get_header(); ?>
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<div id="kitchen-sink" role="main">
-			<header>
+		<div id="kitchen-sink" role="main" class="row">
+			<header class="column">
 				<h1 class="entry-title"><?php the_title(); ?></h1><hr>
 				<p class="lead">This page includes every single Foundation element so that we can make sure things work together smoothly.</p><hr>
 			</header>
 
 			<!-- Main wrapper for the components in the kitchen-sink -->
-			<div id="components">
+			<div id="components" class="columns small-12 large-9">
 
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
@@ -638,7 +638,7 @@ get_header(); ?>
 				</div>
 
 				<!-- On this page - sidebar nav container -->
-				<nav id="kitchen-sink-nav" data-sticky-container>
+				<nav id="kitchen-sink-nav" class="columns large-3" data-sticky-container>
 					<div class="docs-toc" data-sticky="sidebar" data-anchor="components">
 						<ul class="vertical menu docs-sub-menu" data-magellan>
 							<li class="docs-menu-title">On this page:</li>
