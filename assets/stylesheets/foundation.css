@@ -5268,7 +5268,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: transparent; }
+    background-color: #fefefe; }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -5954,11 +5954,33 @@ table.hover tr:nth-of-type(even):hover {
             flex: 0 0 50%; }
 
 .navigation {
-  padding: 0.9375rem 0.9375rem 0; }
+  padding: 0.9375rem; }
   .navigation_logo {
     width: 200px; }
   .navigation_details {
     text-align: right; }
+
+.hero {
+  height: 600px;
+  height: 70vh;
+  background-size: cover;
+  background-position: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .hero_detail {
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    background-color: rgba(254, 254, 254, 0.6);
+    padding: 0.9375rem; }
 
 .hamburglar {
   -webkit-transform: scale(0.7);

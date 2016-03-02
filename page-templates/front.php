@@ -2,7 +2,25 @@
 /*
 Template Name: Front
 */
-get_header(); ?>
+get_header(); 
+
+$pageID = get_the_ID();
+
+$thumb_id = get_post_thumbnail_id( $pageID );
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+$featuredImage = $thumb_url_array[0];
+
+$heroHeaderText = get_post_meta($pageID, 'headerText', true);
+$heroParaText = get_post_meta($pageID, 'headerParagraph', true);
+
+?>
+
+<section class="hero" style="background-image: url('<?php echo $featuredImage;?>');">
+	<div class="hero_detail">
+		<h2><?php echo $heroHeaderText; ?></h2>
+		<p><?php echo $heroParaText; ?></p>
+	</div>
+</section>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
