@@ -3534,10 +3534,10 @@ kbd {
       background-color: #002852;
       color: #fff; }
   .button.secondary {
-    background-color: #96ff05;
+    background-color: #9ece29;
     color: #fff; }
     .button.secondary:hover, .button.secondary:focus {
-      background-color: #79d000;
+      background-color: #7ea521;
       color: #fff; }
   .button.success {
     background-color: #3adb76;
@@ -3572,11 +3572,11 @@ kbd {
         border-color: #001934;
         color: #001934; }
     .button.hollow.secondary {
-      border: 1px solid #96ff05;
-      color: #96ff05; }
+      border: 1px solid #9ece29;
+      color: #9ece29; }
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-        border-color: #4b8200;
-        color: #4b8200; }
+        border-color: #4f6715;
+        color: #4f6715; }
     .button.hollow.success {
       border: 1px solid #3adb76;
       color: #3adb76; }
@@ -3979,7 +3979,7 @@ select {
   background: #003267;
   color: #fefefe; }
   .badge.secondary {
-    background: #96ff05;
+    background: #9ece29;
     color: #fefefe; }
   .badge.success {
     background: #3adb76;
@@ -4055,10 +4055,10 @@ select {
       background-color: #002852;
       color: #fefefe; }
   .button-group.secondary .button {
-    background-color: #96ff05;
+    background-color: #9ece29;
     color: #fefefe; }
     .button-group.secondary .button:hover, .button-group.secondary .button:focus {
-      background-color: #79d000;
+      background-color: #7ea521;
       color: #fefefe; }
   .button-group.success .button {
     background-color: #3adb76;
@@ -4109,7 +4109,7 @@ select {
   .callout.primary {
     background-color: #c2e0ff; }
   .callout.secondary {
-    background-color: #efffda; }
+    background-color: #f1f8de; }
   .callout.success {
     background-color: #e1faea; }
   .callout.alert {
@@ -4344,7 +4344,7 @@ select {
   background: #003267;
   color: #fefefe; }
   .label.secondary {
-    background: #96ff05;
+    background: #9ece29;
     color: #fefefe; }
   .label.success {
     background: #3adb76;
@@ -4692,7 +4692,7 @@ body {
   .progress.primary .progress-meter {
     background-color: #003267; }
   .progress.secondary .progress-meter {
-    background-color: #96ff05; }
+    background-color: #9ece29; }
   .progress.success .progress-meter {
     background-color: #3adb76; }
   .progress.alert .progress-meter {
@@ -5268,7 +5268,7 @@ table.hover tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #121212; }
+    background-color: transparent; }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -5933,5 +5933,492 @@ table.hover tr:nth-of-type(even):hover {
   My custom styles:
   Add your scss files below to structure your project styles
 */
+.overlay {
+  position: absolute;
+  padding: 3.125rem 0;
+  width: 100%;
+  background: rgba(254, 254, 254, 0.9); }
+
+.mobileMenu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.4375rem 0 0.9375rem; }
+  .mobileMenu_wing {
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .mobileMenu_title {
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+
+.navigation {
+  padding: 0.9375rem 0.9375rem 0; }
+  .navigation_logo {
+    width: 200px; }
+  .navigation_details {
+    text-align: right; }
+
+.hamburglar {
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 auto; }
+
+.path-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68px;
+  width: 68px;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+  -webkit-mask-box-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2OCA2OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjggNjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9IkxheWVyXzMiIGRpc3BsYXk9Im5vbmUiPg0KCTxnIGlkPSJMYXllcl8yX2NvcHlfMyIgZGlzcGxheT0iaW5saW5lIj4NCgkJPHBhdGggZD0iTTY4LDM0QzY4LDE1LjIsNTIuOCwwLDM0LDBTMCwxNS4yLDAsMzRjMCwxOC44LDE1LjIsMzQsMzQsMzR2LTRDMTcuNCw2NCw0LDUwLjYsNCwzNFMxNy40LDQsMzQsNHMzMCwxMy40LDMwLDMwDQoJCQlTNTAuNiw2NCwzNCw2NFM0LDUwLjYsNCwzNFMxNy40LDQsMzQsNGMxNS44LDAsMjMuOCwxMS4zLDIzLjgsMTEuM2MxLjQsMiwyLjcsNC4xLDMuMiw2LjZjMC40LDIuNCwwLjMsNS0xLjIsNi45DQoJCQljLTEuMSwxLjQtMi43LDIuMy00LjQsMi43QzU0LjMsMzEuOSw1My4xLDMyLDUyLDMySDE4djRoMzRjMTcuNy0wLjQsMTItMTgsMTItMThjLTAuOS0yLjctMi41LTUuMi00LjMtNy4zDQoJCQljLTQuNC01LjMtMTAuNi04LjYtMTcuMy05LjlDMzkuNywwLjIsMzYuOCwwLDM0LDBDMTUuMiwwLDAsMTUuMiwwLDM0YzAsMTguOCwxNS4yLDM0LDM0LDM0UzY4LDUyLjgsNjgsMzR6Ii8+DQoJCTxyZWN0IHk9IjMwLjciIGZpbGw9Im5vbmUiIHdpZHRoPSIxNiIgaGVpZ2h0PSI4LjgiLz4NCgkJPGcgaWQ9IkxheWVyXzRfY29weV8zIj4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjxnIGlkPSJMYXllcl84IiBkaXNwbGF5PSJub25lIj4NCgk8cGF0aCBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0IzQjNCMyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGQ9Ik0zNCwyYzEyLjEsMCwxOCw0LDE4LDQNCgkJczcuOSw0LjMsMTEsMTMuOGMwLDAsMiw2LjgtMywxMS4xYzAsMC0zLjIsMy4yLTgsMy4yYy0zLjksMCwwLDAsMCwwIi8+DQo8L2c+DQo8ZyBpZD0iTGF5ZXJfMTIiIGRpc3BsYXk9Im5vbmUiPg0KCTxwYXRoIGRpc3BsYXk9ImlubGluZSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkYwMDAwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTUyLDM0Ii8+DQoJPHBhdGggZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjAwMDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMzQsMiIvPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzkiIGRpc3BsYXk9Im5vbmUiPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzQiIGRpc3BsYXk9Im5vbmUiPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzVfY29weSIgZGlzcGxheT0ibm9uZSI+DQo8L2c+DQo8ZyBpZD0iTGF5ZXJfNSIgZGlzcGxheT0ibm9uZSI+DQoJPHBhdGggZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjAwMDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMzQsNjZDMTYuMyw2NiwyLDUxLjcsMiwzNA0KCQlTMTYuMywyLDM0LDJzMzIsMTQuMywzMiwzMlM1MS43LDY2LDM0LDY2UzIsNTEuNywyLDM0UzE2LjMsMiwzNCwyYzIyLjcsMCwyOSwxNi4xLDI5LDIzLjVTNTIsMzQsNTIsMzRIMTgiLz4NCjwvZz4NCjxnIGlkPSJMYXllcl81X2NvcHlfMiIgZGlzcGxheT0ibm9uZSI+DQoJPHBhdGggZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjAwMDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMzMuOSwyIi8+DQoJPHBhdGggZGlzcGxheT0iaW5saW5lIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjAwMDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMzQsMkMxNi4zLDIsMiwxNi4zLDIsMzQNCgkJczE0LjMsMzIsMzIsMzJzMzItMTQuMywzMi0zMlM1MS43LDIsMzQsMiIvPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzExIj4NCgk8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGRjAwMDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNMzQsMmMxMS42LDAsMjEuOCw2LjIsMjcuNCwxNS41DQoJCWMyLjksNC44LDUsMTYuNS05LjQsMTYuNWgtNCIvPg0KPC9nPg0KPC9zdmc+DQo=); }
+
+.burger-ring .svg-ring path {
+  stroke: #9ece29; }
+
+.animate-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px; }
+
+.path-rotation {
+  height: 34px;
+  width: 34px;
+  margin: 34px 34px 0 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+          transform-origin: 100% 0; }
+  .path-rotation:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 34px;
+    margin: 0 4px 0 0;
+    background: #9ece29; }
+
+@-webkit-keyframes rotate-out {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate-out {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate-in {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes rotate-in {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  40% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.hamburglar.is-open .path {
+  -webkit-animation: dash-in 0.4s linear normal;
+          animation: dash-in 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-open .animate-path {
+  -webkit-animation: rotate-in 0.4s linear normal;
+          animation: rotate-in 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-closed .path {
+  -webkit-animation: dash-out 0.4s linear normal;
+          animation: dash-out 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-closed .animate-path {
+  -webkit-animation: rotate-out 0.4s linear normal;
+          animation: rotate-out 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.path {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  stroke-linejoin: round; }
+
+@-webkit-keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 240; } }
+
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0; }
+  40% {
+    stroke-dashoffset: 240; }
+  100% {
+    stroke-dashoffset: 240; } }
+
+.burger-icon {
+  position: absolute;
+  padding: 20px 16px;
+  height: 68px;
+  width: 68px; }
+
+.burger-container {
+  position: relative;
+  height: 28px;
+  width: 36px; }
+
+.burger-bun-top,
+.burger-bun-bot,
+.burger-filling {
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+  background: #9ece29; }
+
+.burger-bun-top {
+  top: 0;
+  -webkit-transform-origin: 34px 2px;
+      -ms-transform-origin: 34px 2px;
+          transform-origin: 34px 2px; }
+
+.burger-bun-bot {
+  bottom: 0;
+  -webkit-transform-origin: 34px 2px;
+      -ms-transform-origin: 34px 2px;
+          transform-origin: 34px 2px; }
+
+.burger-filling {
+  top: 12px; }
+
+.burger-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px; }
+
+.svg-ring {
+  width: 68px;
+  height: 68px; }
+
+.hamburglar.is-open .burger-bun-top {
+  -webkit-animation: bun-top-out 0.4s linear normal;
+          animation: bun-top-out 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-open .burger-bun-bot {
+  -webkit-animation: bun-bot-out 0.4s linear normal;
+          animation: bun-bot-out 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-closed .burger-bun-top {
+  -webkit-animation: bun-top-in 0.4s linear normal;
+          animation: bun-top-in 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-closed .burger-bun-bot {
+  -webkit-animation: bun-bot-in 0.4s linear normal;
+          animation: bun-bot-in 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes bun-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  80% {
+    left: -5px;
+    top: 0;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg); }
+  100% {
+    left: -5px;
+    top: 1px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); } }
+
+@keyframes bun-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  80% {
+    left: -5px;
+    top: 0;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg); }
+  100% {
+    left: -5px;
+    top: 1px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); } }
+
+@-webkit-keyframes bun-bot-out {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    left: 0;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  80% {
+    left: -5px;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  100% {
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); } }
+
+@keyframes bun-bot-out {
+  0% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    left: 0;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  80% {
+    left: -5px;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  100% {
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); } }
+
+@-webkit-keyframes bun-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  20% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg); }
+  80% {
+    left: 0;
+    bot: 0;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  100% {
+    left: 0;
+    bot: 1px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes bun-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  20% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg); }
+  80% {
+    left: 0;
+    bot: 0;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  100% {
+    left: 0;
+    bot: 1px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@-webkit-keyframes bun-bot-in {
+  0% {
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  20% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  80% {
+    left: 0;
+    bot: 0;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes bun-bot-in {
+  0% {
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  20% {
+    left: -5px;
+    bot: 0;
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  80% {
+    left: 0;
+    bot: 0;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  100% {
+    left: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.hamburglar.is-open .burger-filling {
+  -webkit-animation: burger-fill-out 0.4s linear normal;
+          animation: burger-fill-out 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.hamburglar.is-closed .burger-filling {
+  -webkit-animation: burger-fill-in 0.4s linear normal;
+          animation: burger-fill-in 0.4s linear normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 36px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  80% {
+    width: 36px;
+    left: -6px; }
+  100% {
+    width: 36px;
+    left: 0px; } }
+
+@keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 36px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  80% {
+    width: 36px;
+    left: -6px; }
+  100% {
+    width: 36px;
+    left: 0px; } }
+
+@-webkit-keyframes burger-fill-out {
+  0% {
+    width: 36px;
+    left: 0px; }
+  20% {
+    width: 42px;
+    left: -6px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  100% {
+    width: 0;
+    left: 36px; } }
+
+@keyframes burger-fill-out {
+  0% {
+    width: 36px;
+    left: 0px; }
+  20% {
+    width: 42px;
+    left: -6px; }
+  40% {
+    width: 0;
+    left: 40px; }
+  100% {
+    width: 0;
+    left: 36px; } }
 
 /*# sourceMappingURL=foundation.css.map */

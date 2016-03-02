@@ -1,0 +1,12 @@
+.mobileMenu {
+	display: flex;
+	padding: rem-calc(7) 0 rem-calc(15);
+	&_wing {
+		flex: 0 0 25%;
+	}
+	&_title {
+		flex: 0 0 50%;
+	}
+	&_logo {
+	}
+}
