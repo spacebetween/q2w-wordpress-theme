@@ -8,8 +8,11 @@
 	align-items: center;
 	text-align: center;
 	&_detail {
-		flex: 0 0 50%;
+		flex: 0 0 80%;
 		background-color: rgba($white, 0.6);
 		padding: rem-calc(15);
+		@include breakpoint(medium) {
+			flex: 0 0 50%;
+		}
 	}
 }
