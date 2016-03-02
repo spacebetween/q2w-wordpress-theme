@@ -11,7 +11,7 @@
 	<div class="mobileMenu">
 		<div class="mobileMenu_wing"></div>
 		<div class="mobileMenu_title">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="mobileMenu_logo" src="wp-content/themes/q2w-wordpress-theme/assets/images/logoWOText.png" alt="<?php bloginfo( 'name' ); ?>"></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="mobileMenu_logo" src="/wp-content/themes/q2w-wordpress-theme/assets/images/logoWOText.png" alt="<?php bloginfo( 'name' ); ?>"></a>
 		</div>
 		<div class="mobileMenu_wing">
 			<div id="hamburger" class="hamburglar is-closed" data-toggle="mobile-menu">
