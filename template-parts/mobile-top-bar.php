@@ -47,5 +47,7 @@
 	</div>
 	<div class="menu-centered overlay" id="mobile-menu" role="navigation" data-toggler data-animate="slide-in-down slide-out-up" style="display: none;">
   	<?php foundationpress_mobile_nav(); ?> 
+  	<button class="button">Call: 0000 00000</button>
+  	<button class="secondary button">Request a call back</button>
 	</div>
 </div>
