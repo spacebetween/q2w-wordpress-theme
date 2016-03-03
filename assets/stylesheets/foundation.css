@@ -5933,6 +5933,9 @@ table.hover tr:nth-of-type(even):hover {
   My custom styles:
   Add your scss files below to structure your project styles
 */
+.section {
+  margin-bottom: 9.375rem; }
+
 .overlay {
   position: absolute;
   padding: 3.125rem 0;
@@ -5974,7 +5977,8 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 1.875rem; }
   .hero_detail {
     -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
