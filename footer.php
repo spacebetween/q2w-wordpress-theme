@@ -9,7 +9,6 @@
  */
 
 ?>
-
 		</section>
 		<div class="container">
 			<footer id="footer">

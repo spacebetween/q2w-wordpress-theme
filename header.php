@@ -42,8 +42,8 @@
 			</div>
 			<div class="top-bar-right">
 				<div class="navigation_details show-for-medium">
-					<button class="button">Call: 0000 00000</button>
-					<button class="secondary button">Request a call back</button>
+					<a href="tel:01303764287" class="button">Call: 01303 764287</a>
+					<a href="/contact" class="secondary button">Request a call back</a>
 				</div>
 				<?php foundationpress_top_bar_r(); ?>
 			</div>

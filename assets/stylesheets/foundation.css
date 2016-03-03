@@ -5936,6 +5936,9 @@ table.hover tr:nth-of-type(even):hover {
 .section {
   margin-bottom: 4.375rem; }
 
+.secondary {
+  color: #9ece29; }
+
 .overlay {
   position: absolute;
   padding: 3.125rem 0;
