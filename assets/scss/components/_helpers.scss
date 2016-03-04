@@ -1,5 +1,6 @@
 .section {
-	margin: rem-calc(70) 0;
+	margin-top: rem-calc(70);
+	margin-bottom: rem-calc(70);
 }
 .secondary {
 	color: $secondary-color;
