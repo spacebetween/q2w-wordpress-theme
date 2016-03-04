@@ -24,7 +24,7 @@ $heroParaText = get_post_meta($pageID, 'headerParagraph', true);
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<section class="row" role="main">
+<section class="row section" role="main">
 	<div <?php post_class('column') ?> id="post-<?php the_ID(); ?>">
 		<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 		<div class="entry-content">

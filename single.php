@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<div id="single-post" role="main">
+<section id="single-post" role="main" class="section">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -42,5 +42,5 @@ get_header(); ?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
 <?php get_sidebar(); ?>
-</div>
+</section>
 <?php get_footer();

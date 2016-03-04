@@ -5934,7 +5934,7 @@ table.hover tr:nth-of-type(even):hover {
   Add your scss files below to structure your project styles
 */
 .section {
-  margin-bottom: 4.375rem; }
+  margin: 4.375rem 0; }
 
 .secondary {
   color: #9ece29; }
