@@ -47,7 +47,7 @@
 	</div>
 	<div class="menu-centered overlay" id="mobile-menu" role="navigation" data-toggler data-animate="slide-in-down slide-out-up" style="display: none;">
   	<?php foundationpress_mobile_nav(); ?> 
-  	<a href="tel:01303764287" class="button">Call: 01303 764287</a>
-  	<a href="/contact" class="secondary button">Request a call back</a>
+  	<a href="tel:01303764287" class="button expanded">Call: 01303 764287</a>
+  	<a href="/contact" class="secondary button expanded">Request a call back</a>
 	</div>
 </div>
