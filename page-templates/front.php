@@ -18,7 +18,7 @@ $heroParaText = get_post_meta($pageID, 'headerParagraph', true);
 <section class="hero" style="background-image: url('<?php echo $featuredImage;?>');">
 	<div class="hero_detail">
 		<h2><?php echo $heroHeaderText; ?></h2>
-		<p><?php echo $heroParaText; ?></p>
+		<p class="hero_paragraph"><?php echo $heroParaText; ?></p>
 	</div>
 </section>
 
