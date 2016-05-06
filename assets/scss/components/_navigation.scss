@@ -1,9 +1,12 @@
 .navigation {
-	padding: rem-calc(15) rem-calc(15) 0;
+	padding: rem-calc(15);
 	&_logo {
 		width: 200px;
 	}
 	&_details {
 		text-align: right;
+	}
+	&_buttonContainer {
+		margin-top: rem-calc(30);
 	}
 }
