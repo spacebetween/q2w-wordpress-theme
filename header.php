@@ -14,7 +14,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>">
+
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-144x144.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114.png">
@@ -43,7 +43,7 @@
 			</div>
 			<div class="top-bar-right">
 				<div class="navigation_details show-for-medium">
-					<button class="button">Call: 0000 00000</button>
+					<a href="tel:01303764287" class="button">Call: 01303 764287</a>
 					<button class="secondary button">Request a call back</button>
 				</div>
 				<?php foundationpress_top_bar_r(); ?>
