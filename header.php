@@ -47,7 +47,7 @@
 
 		<nav class="main-navigation navigation top-bar" role="navigation">
 			<div class="top-bar-title show-for-medium">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="navigation_logo" src="/wp-content/themes/q2w-wordpress-theme/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?>"></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="navigation_logo" src="/wp-content/themes/q2w-wordpress-theme/assets/images/logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a>
 			</div>
 			<div class="top-bar-right">
 				<div class="navigation_details show-for-medium">
