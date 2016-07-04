@@ -1,0 +1,21 @@
+.hero {
+	height: 600px;
+	height: 70vh;
+	background-size: cover;
+	background-position: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&_detail {
+		flex: 0 0 80%;
+		background-color: rgba($white, 0.6);
+		padding: rem-calc(15);
+		@include breakpoint(medium) {
+			flex: 0 0 50%;
+		}
+	}
+	&_paragraph {
+		font-size: 1.5rem;
+	}
+}

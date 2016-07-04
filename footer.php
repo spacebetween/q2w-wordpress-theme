@@ -9,9 +9,8 @@
  */
 
 ?>
-
 		</section>
-		<div id="footer-container">
+		<div class="container">
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>

@@ -64,7 +64,7 @@ $white: #fefefe;
 $whiteTransparent: rgba($white, 0.9);
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: Arial, sans-serif;
+$body-font-family: 'Poppins', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -100,7 +100,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: Arial, sans-serif;
 $header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -137,7 +137,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: $primary-light-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -546,6 +546,6 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: transparent;
-$topbar-link-color: #ffffff;
+$topbar-background: $white;
+$topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
