@@ -21,7 +21,6 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
 		<link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
-		<meta name="google-site-verification" content="e5HxNgz21jNoWqTi5MW2tKVUnGtrvgQJmsua7BQAxKs" />
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
