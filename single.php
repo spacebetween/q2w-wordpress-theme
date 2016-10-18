@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<section id="single-post" role="main" class="section">
+<section id="single-post" role="main" class="row section">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
